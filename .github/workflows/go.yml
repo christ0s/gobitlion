@@ -6,8 +6,8 @@ name: Go
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+  # pull_request:
+  #   branches: [ "main" ]
 
 jobs:
 
@@ -21,7 +21,7 @@ jobs:
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
-        go-version: 1.19 1.18 1.17 1.13
+        go-version: 1.19 1.18
     - name: Setup make
       uses: actions/setup-make
     - name: Build
