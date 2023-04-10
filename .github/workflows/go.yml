@@ -12,10 +12,9 @@ on:
 jobs:
 
   build:
-    runs-on: [self-hosted k8s-api ubuntu:latest]
+    runs-on: [self-hosted k8s-api ubuntu]
     steps:
     - uses: actions/checkout@v3
-
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
