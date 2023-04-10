@@ -28,7 +28,7 @@ jobs:
     #   uses: actions/setup-make
     - name: List files in the repository
       run: |
-        ls -l
+        which bash
     - name: Build
       run: make
     # - name: List files in the repository
