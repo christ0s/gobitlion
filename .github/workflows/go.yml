@@ -12,9 +12,12 @@ on:
 jobs:
 
   build:
-    runs-on: [self-hosted k8s-api ]
+    runs-on: 
+      - self-hosted
+      - k8s-api
     steps:
     - uses: actions/checkout@v3
+    - uses: actions/setup-cmake
     - name: Set up Go
       uses: actions/setup-go@v3
       with:
