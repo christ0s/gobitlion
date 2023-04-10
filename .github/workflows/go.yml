@@ -12,9 +12,7 @@ on:
 jobs:
 
   build:
-    runs-on: 
-      - self-hosted
-      - k8s-api
+    runs-on: [self-hosted k8s-api ubuntu:latest]
     steps:
     - uses: actions/checkout@v3
 
@@ -25,7 +23,7 @@ jobs:
     # - name: Setup make
     #   uses: actions/setup-make
     - name: Build
-      run: make
+      run: Make
     - name: List files in the repository
       run: |
         ls -l
