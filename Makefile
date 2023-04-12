@@ -1,4 +1,4 @@
-SHELL := /bin/bash
+SHELL := /user/bin/bash
 
 TARGET := $(shell echo $${PWD##*/})
 .DEFAULT_GOAL: $(TARGET)
