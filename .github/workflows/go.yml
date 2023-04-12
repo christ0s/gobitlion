@@ -31,7 +31,7 @@ jobs:
         which bash
         sleep 220s
     - name: Build
-      run: make
+      run: go build .
     # - name: List files in the repository
     #   run: |
     #     ls -l
