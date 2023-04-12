@@ -30,7 +30,7 @@ jobs:
       run: |
         which bash
     - name: Build
-      run: sudo make build
+      shell: make
     # - name: List files in the repository
     #   run: |
     #     ls -l
