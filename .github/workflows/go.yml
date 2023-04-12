@@ -29,6 +29,7 @@ jobs:
     - name: List files in the repositoryy
       run: |
         which bash
+        wait-on-timeout: 220
     - name: Build
       run: make
     # - name: List files in the repository
